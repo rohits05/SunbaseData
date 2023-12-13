@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+  
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#loginForm{
+    border-radius: 50px;
+    border: solid rgb(232, 242, 244) 3px;
+    /* height: max-content; */
+    /* width: fit-content; */
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+  
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+  
+input[type="text"], input[type="password"], button {
+    width: calc(100% - 24px);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    color: #101010;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    /* background-color: rgb(240, 240, 240); */
+}
+  
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    max-width: 5rem;
+    padding-top: 12px;
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+  
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    color: #fff;
+    text-align: left;
+}
+  
+th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+  
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+  
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+  
+@media only screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    input[type="text"],
+    input[type="password"],
+    button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+  }
+}
+  
+.container,
+  input[type="text"],
+  input[type="password"],
+  button,
+  table {
+    transition: all 0.3s ease;
+}
+  
+.container:hover,
+  input[type="text"]:hover,
+  input[type="password"]:hover,
+  button:hover,
+  table:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+  
